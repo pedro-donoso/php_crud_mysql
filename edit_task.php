@@ -14,7 +14,14 @@ if (isset($_GET["id"])) {
 }
 
 if (isset($_POST["update"])) {
-    echo "Actualizando";
+    $id = $_GET["id"];
+    $title = $_POST["title"];
+    $description = $_POST["description"];
+
+    echo $id;
+    echo $title;
+    echo $description;
+    
 }
 
 ?>
