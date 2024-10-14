@@ -4,12 +4,12 @@
 
 
 
-<div class="container p-4">
+<div class="container mt-3">
 
-    <div class="row">
-        <div class="col-md-4">
+    <div class="row bg-warning">
+        <div class="col-md-4 my-3">
 
-        <h5 class="mb-3">Ingresa Producto:</h5>
+        <h5 class="mb-3">Ingresa Producto</h5>
 
             <!-- verifico si existe dato guardado en sesion -->
             <?php if (isset($_SESSION["message"])) { ?>
@@ -37,7 +37,7 @@
             <input type="text" name="title" class="form-control" placeholder="Nombre Producto" autofocus required>
         </div>
         <div class="form-group my-3">
-            <textarea name="description" rows="4" class="form-control"
+            <textarea name="description" rows="2" class="form-control"
                 placeholder="Descripción Producto"></textarea>
         </div>
         <button type="submit" class="btn btn-success btn-block" name="save_task">
@@ -46,9 +46,9 @@
     </form>
 </div>
         </div>
-        <div class="col-md-8">
-        <h5 class="text-center mb-3">Productos guardados:</h5>
-                        <table class="table table-bordered">
+        <div class="col-md-8 mt-3">
+        <h5 class="text-center mb-3">Lista de Compra</h5>
+                        <table class="table table-bordered table-dark">
                             <thead>
                                 <tr>
                                     <th>Título</th>

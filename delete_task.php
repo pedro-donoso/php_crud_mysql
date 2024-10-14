@@ -22,7 +22,7 @@ if (isset($_GET["id"])) {
     // Establece un mensaje de sesión para notificar que la tarea ha sido eliminada
     $_SESSION["message"] = "Producto eliminado";
     // Establece el tipo de mensaje de sesión (en este caso, "danger" para un mensaje de error)
-    $_SESSION["message_type"] = "danger";
+    $_SESSION["message_type"] = "info";
 
     // Redirige al usuario a la página de inicio
     header("Location: index.php");
