@@ -47,7 +47,8 @@
                                     <th>Título</th>
                                     <th>Descripción</th>
                                     <th>Creación</th>
-                                    <th>Acciones</th>
+                                    <th>Editar</th>
+                                    <th>Borrar</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -63,6 +64,20 @@
                                     <!-- Agrega las tareas  a la tabla -->
                                     <tr>
                                         <td><?php echo $row["title"] ?></td>
+                                        <td><?php echo $row["description"] ?></td>
+                                        <td><?php echo $row["created_at"] ?></td>
+                                        <td>
+                                            <a href="./edit_task.php?id=<?php echo $row["id"]?>">
+                                            <i class="fa-solid fa-pencil"></i>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href=".delete_task.php?id=<?php echo $row["id"]?>">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                            </a>
+                                        </td>
+                                            
+                                        
                                     </tr>
                                 <?php } ?>
                             </tbody>
