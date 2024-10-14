@@ -76,7 +76,7 @@
                                             <a href="./edit_task.php?id=<?php echo $row["id"]?>" class="btn btn-sm btn-primary mx-1">
                                             <i class="fa-solid fa-pencil"></i>
                                             </a>
-                                            <a href=".delete_task.php?id=<?php echo $row["id"]?>" class="btn btn-sm btn-danger mx-1">
+                                            <a href="./delete_task.php?id=<?php echo $row["id"]?>" class="btn btn-sm btn-danger mx-1">
                                             <i class="fa-solid fa-trash-can"></i>
                                             </a>
                                         </td>

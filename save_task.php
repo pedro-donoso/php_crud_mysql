@@ -25,6 +25,8 @@ if (isset($_POST["save_task"])) {
     // Color guardado
     $_SESSION["message_type"] = "success";
 
+    $_SESSION["message_type"] = "danger";
+
     
     header("Location: index.php");
     
