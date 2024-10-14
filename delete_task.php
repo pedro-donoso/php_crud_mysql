@@ -27,4 +27,3 @@ if (isset($_GET["id"])) {
     // Redirige al usuario a la página de inicio
     header("Location: index.php");
 }
-?>

@@ -18,18 +18,12 @@ if (isset($_POST["save_task"])) {
 
     } 
 
-
-
     // Almaceno mensaje en session
     $_SESSION["message"] = "¡Tu Producto ha sido agregado!";
     // Color guardado
     $_SESSION["message_type"] = "success";
-
-    $_SESSION["message_type"] = "danger";
-
     
     header("Location: index.php");
     
 }
 
-?>
