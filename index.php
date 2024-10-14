@@ -40,6 +40,34 @@
                 </form>
             </div>
         </div>
+        <div class="col-md-8">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Título</th>
+                                    <th>Descripción</th>
+                                    <th>Creación</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php 
+                                // Consulta mysql
+                                $query = "SELECT * FROM task";
+                                // Todas las tareas
+                                $result_tasks = mysqli_query($conn, $query);
+
+                                // Recorre tareas desde la BD
+                                while($row = mysqli_fetch_array($result_tasks)) { ?>
+
+                                    <!-- Agrega las tareas  a la tabla -->
+                                    <tr>
+                                        <td><?php echo $row["title"] ?></td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+            </div>
     </div>
 </div>
 <?php include("./includes/footer.php") ?>
