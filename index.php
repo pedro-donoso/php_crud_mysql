@@ -2,14 +2,18 @@
 
 <?php include("./includes/header.php") ?>
 
+
+
 <div class="container p-4">
+
     <div class="row">
         <div class="col-md-4">
 
             <!-- verifico si existe dato guardado en sesion -->
             <?php if (isset($_SESSION["message"])) { ?>
 
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <!-- agrego color guardado -->
+                <div class="alert alert-<?= $_SESSION["message_type"] ?> alert-dismissible fade show" role="alert">
 
                     <!-- muestro mensaje -->
                     <?= $_SESSION["message"] ?>
@@ -17,7 +21,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
 
-            <?php } ?>
+                <!-- limpio datos sesion -->
+            <?php session_unset(); } ?>
+
+                <h5>Agregar Tarea:</h5>
 
             <div class="card card-body">
                 <!-- hacia dónde envío los datos -->

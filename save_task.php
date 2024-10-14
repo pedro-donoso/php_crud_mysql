@@ -22,6 +22,7 @@ if (isset($_POST["save_task"])) {
 
     // Almaceno mensaje en session
     $_SESSION["message"] = "¡Tarea guardada satisfactoriamente!";
+    // Color guardado
     $_SESSION["message_type"] = "success";
 
     
