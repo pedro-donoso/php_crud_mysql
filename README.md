@@ -5,3 +5,6 @@
 ![elimina](https://github.com/user-attachments/assets/d3fe8c71-e65b-4123-a60c-d819b7c1181b)
 
 ![bd](https://github.com/user-attachments/assets/afca1838-0bb4-45bc-9d91-cb828690bd6a)
+
+![datos](https://github.com/user-attachments/assets/bd6d7579-a6b9-4dce-82f6-98bbf7b260cd)
+
