@@ -13,5 +13,4 @@ $conn = mysqli_connect(
     echo "DB is connected";
 } */
 
-?>
 
